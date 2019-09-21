@@ -3,10 +3,17 @@
 <%= form_tag coupons_path do %>
 
   <label>Coupon Code:</label><br>
+<<<<<<< HEAD
     <%= text_field_tag :'coupon[coupon_code]' %><br>
 
   <label>Store:</label><br>
     <%= text_field_tag :'coupon[store]' %><br>
+=======
+    <%= text_field_tag :'coupon_code' %><br>
+
+  <label>Store:</label><br>
+    <%= text_field_tag :'store' %><br>
+>>>>>>> e780b033fdcace7f8a2ce36d7f15476e6ca41d00
 
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <%= submit_tag "Submit Coupon" %>

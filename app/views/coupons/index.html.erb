@@ -1,8 +1,15 @@
 <h1>Coupon Index</h1>
 <div>
+<<<<<<< HEAD
   <ul>
   <% @coupons.each do |coupon| %>
     <li><%= link_to coupon.coupon_code, coupon_path(coupon) %> | <%= coupon.store %></li>
   <% end %>
   </ul>
 </div>
+=======
+  <% @coupons.each do |coupon| %>
+    <div><%= link_to coupon, coupon_path(coupon) %></div>
+  <% end %>
+</div>
+>>>>>>> e780b033fdcace7f8a2ce36d7f15476e6ca41d00
